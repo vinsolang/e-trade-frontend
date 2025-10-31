@@ -8,7 +8,8 @@ const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [error, setError] = useState("");
 
-  const API_URL = "http://localhost:8081/api/auth";
+  // const API_URL = "http://localhost:8081/api/auth";
+   const API_URL = "https://e-trade-project-production.up.railway.app/api/auth";
 
   //  Safe helper for parsing JSON
   const safeParseJSON = (value) => {

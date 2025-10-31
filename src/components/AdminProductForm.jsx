@@ -3,9 +3,12 @@ import React, { useEffect, useState, useCallback,useContext } from "react";
 import axios from "axios";
 import { FaTimesCircle, FaEdit, FaBoxOpen } from 'react-icons/fa'; // Import an icon for removal
 
-const API = "http://localhost:8081/api/admin/products";
-const UPLOAD_API = "http://localhost:8081/api/admin/products/upload";
-const IMAGE_BASE_URL = "http://localhost:8081"; // ⬅ NEW: Define the base URL
+// const API = "http://localhost:8081/api/admin/products";
+// const UPLOAD_API = "http://localhost:8081/api/admin/products/upload";
+// const IMAGE_BASE_URL = "http://localhost:8081"; // ⬅ NEW: Define the base URL
+const API = "https://e-trade-project-production.up.railway.app/api/admin/products";
+const UPLOAD_API = "https://e-trade-project-production.up.railway.app/api/admin/products/upload";
+const IMAGE_BASE_URL = "https://e-trade-project-production.up.railway.app"; // ⬅ NEW: Define the base URL
 
 const AdminProductForm = ({ product, onSaved, onCancel }) => {
     const [name, setName] = useState("");

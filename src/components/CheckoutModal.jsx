@@ -10,9 +10,12 @@ import Swal from 'sweetalert2';
 
 // const MySwal = withReactContent(Swal);
 // NOTE: Update this URL to match your Spring Boot API endpoint if it changes
-const ORDER_API = "http://localhost:8081/api/orders";
+// const ORDER_API = "http://localhost:8081/api/orders";
+// // const API = "http://localhost:8081/api/admin/products";
+// const imageBase = "http://localhost:8081";
+const ORDER_API = "https://e-trade-project-production.up.railway.app/api/orders";
 // const API = "http://localhost:8081/api/admin/products";
-const imageBase = "http://localhost:8081";
+const imageBase = "https://e-trade-project-production.up.railway.app";
 
 const CheckoutModal = ({ isOpen, onClose, carts, totalAmount }) => {
     // NOTE: CartContext is assumed to be defined in '../context/CartProvider'

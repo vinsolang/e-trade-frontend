@@ -16,8 +16,11 @@ const ProductProvider = ({ children }) => {
   // Search state
   const [searchQuery, setSearchQuery] = useState("");
 
-  const API = "http://localhost:8081/api/admin/products";
-  const imageBase = "http://localhost:8081"; // Prefix for backend image URLs
+  // const API = "http://localhost:8081/api/admin/products";
+  // const imageBase = "http://localhost:8081"; // Prefix for backend image URLs
+   const API = "https://e-trade-project-production.up.railway.app/api/admin/products";
+  const imageBase = "https://e-trade-project-production.up.railway.app/"; // Prefix for backend image URLs
+
 
   //  Fetch all products
   const fetchProduct = async () => {

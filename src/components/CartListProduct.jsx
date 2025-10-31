@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { CartContext } from "../context/CartProvider";
 
 // Define the image base URL used in ProductDetail and CartProvider
-const imageBase = "http://localhost:8081";
+const imageBase = "https://e-trade-project-production.up.railway.app";
 
 const CartListProduct = ({ cart }) => {
   const { removeCartItem, updateCartItem } = useContext(CartContext);

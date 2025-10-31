@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 
-const API_URL = "http://localhost:8081/api/auth";
+const API_URL = "https://e-trade-project-production.up.railway.app/api/auth";
 
 const useAuth = () => {
     const [authError, setAuthError] = useState(null);

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartProvider";
 import { FaArrowLeft } from 'react-icons/fa';
 
-const API = "http://localhost:8081/api/admin/products";
-const imageBase = "http://localhost:8081";
+const API = "https://e-trade-project-production.up.railway.app/api/admin/products";
+const imageBase = "https://e-trade-project-production.up.railway.app";
 
 const ProductDetail = () => {
   const { id } = useParams();

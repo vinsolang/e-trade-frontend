@@ -3,8 +3,10 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 // import ProductCard from "../components/ProductListCard";
 
-const API = "http://localhost:8081/api/admin/products";
-const imageBase = "http://localhost:8081";
+// const API = "http://localhost:8081/api/admin/products";
+// const imageBase = "http://localhost:8081";
+const API = "https://e-trade-project-production.up.railway.app/api/admin/products";
+const imageBase = "https://e-trade-project-production.up.railway.app";
 
 const ProductCard = ({ product }) => {
   const [allProducts, setAllProducts] = useState([]);

@@ -4,9 +4,9 @@ import AdminProductForm from "../../components/AdminProductForm";
 import Swal from 'sweetalert2';
 import { FaEdit, FaPlus, FaTrashAlt, FaSyncAlt } from 'react-icons/fa';
 
-const API = "http://localhost:8081/api/admin/products";
+const API = "https://e-trade-project-production.up.railway.app/api/admin/products";
 // const imageBase = "http://localhost:8081/images/products";
-const imageBase = "http://localhost:8081";
+const imageBase = "https://e-trade-project-production.up.railway.app";
 
 const Products = () => {
   const [allProducts, setAllProducts] = useState([]);

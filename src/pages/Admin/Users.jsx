@@ -4,7 +4,7 @@ import axios from "axios";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import Swal from "sweetalert2";
 
-const USERS_API = "http://localhost:8081/api/auth/users";
+const USERS_API = "https://e-trade-project-production.up.railway.app/api/auth/users";
 
 const Users = () => {
   const { user } = useContext(AuthContext); // Logged-in user data

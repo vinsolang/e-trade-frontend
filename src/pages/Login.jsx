@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 
-const API_URL = "http://localhost:8081/api/auth";
+const API_URL = "https://e-trade-project-production.up.railway.app/api/auth";
 
 // Custom hook for authentication
 const useAuth = () => {

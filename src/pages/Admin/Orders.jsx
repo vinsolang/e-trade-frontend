@@ -12,7 +12,7 @@ const Orders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get("http://localhost:8081/api/orders");
+        const response = await axios.get("https://e-trade-project-production.up.railway.app/api/orders");
         setOrders(response.data);
       } catch (error) {
         console.error("Failed to fetch orders:", error);

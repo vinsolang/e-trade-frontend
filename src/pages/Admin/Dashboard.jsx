@@ -14,9 +14,12 @@ import {
 import axios from "axios";
 
 // --- API Endpoints ---
-const PRODUCTS_API = "http://localhost:8081/api/admin/products";
-const USERS_API = "http://localhost:8081/api/auth/users";
-const ORDERS_API = "http://localhost:8081/api/orders"; // Assuming this is your orders endpoint
+// const PRODUCTS_API = "http://localhost:8081/api/admin/products";
+// const USERS_API = "http://localhost:8081/api/auth/users";
+// const ORDERS_API = "http://localhost:8081/api/orders"; // Assuming this is your orders endpoint
+const PRODUCTS_API = "https://e-trade-project-production.up.railway.app/api/admin/products";
+const USERS_API = "https://e-trade-project-production.up.railway.app/api/auth/users";
+const ORDERS_API = "https://e-trade-project-production.up.railway.app/api/orders"; // Assuming this is your orders endpoint
 // Mock data updated to include actual calculated revenue placeholders
 const INITIAL_STATS = {
     productCount: 0,

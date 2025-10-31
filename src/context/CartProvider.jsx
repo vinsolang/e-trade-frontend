@@ -5,9 +5,12 @@ import axios from "axios";
 
 export const CartContext = createContext();
 
-const API = "http://localhost:8081/api/admin/products"; // Main Product API endpoint
-const CARTS_API = "http://localhost:8081/api/carts"; // JSON Server Cart API endpoint
-const imageBase = "http://localhost:8081"; // Added imageBase constant
+// const API = "http://localhost:8081/api/admin/products"; // Main Product API endpoint
+// const CARTS_API = "http://localhost:8081/api/carts"; // JSON Server Cart API endpoint
+// const imageBase = "http://localhost:8081"; // Added imageBase constant
+const API = "https://e-trade-project-production.up.railway.app/api/admin/products"; // Main Product API endpoint
+const CARTS_API = "https://e-trade-project-production.up.railway.app/api/carts"; // JSON Server Cart API endpoint
+const imageBase = "https://e-trade-project-production.up.railway.app/"; // Added imageBase constant
 
 const CartProvider = ({ children }) => {
   // ... (State variables remain the same)
